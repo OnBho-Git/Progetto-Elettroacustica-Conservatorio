@@ -46,14 +46,12 @@ Oltre all'utilizzo di cavi jumper, di Arduino UNO Q R4 con caricato il codice e 
 - Resistenza (100Ω) * 1
 - Resistenza (220Ω) * 1
 - Resistenza (1kΩ) * 1
-- Resistenza (10KΩ) * 1
 
 </div>
 <div>
 
 - Led Bianco * 1
 - Diffusore Acustico * 1
-- Pulsante * 1
 - Transistor NPN * 1
 
 </div>
@@ -64,7 +62,6 @@ Oltre all'utilizzo di cavi jumper, di Arduino UNO Q R4 con caricato il codice e 
 
 Verrà scritto nel verso in cui si muove la corrente
 
-5V-->Bottone-->Res(10kΩ)-->DPin2
 DPin6-->Res(220Ω)-->AnodoLED-->CatodoLED-->GND
 DPin9-->Res(1kΩ)-->Transistor(BASE)
 5V-->Transistor(COLL.)
