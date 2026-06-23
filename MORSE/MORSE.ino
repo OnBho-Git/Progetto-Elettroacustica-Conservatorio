@@ -2,7 +2,7 @@ const int ledPin = 6;
 const int speakerPin = 9;
 const int buttonPin = 2;
 const int tempoTrasmissione = 80; //Durata del valore più piccolo (punto) in trasmissione
-const int tempoRicezione = 150; //Durata del valore più piccolo in ricezione
+// const int tempoRicezione = 150; //Durata del valore più piccolo in ricezione
 
 // Array: 0-25 lettere A-Z, 26-35 numeri 0-9
 const String morseCode[] = {
@@ -13,20 +13,20 @@ const String morseCode[] = {
   "----", // Spazio
   "......" //Backspace
 };
-
+/*
 unsigned long tempoPressione = 0;
 unsigned long tempoRilascio = 0;
 String sequenzaRicevuta = "";
 bool bottonePremuto = false;
 bool letteraTradotta = true;
 bool spazioTradotto = true;
-
+*/
 void setup() 
 {
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);
   pinMode(speakerPin, OUTPUT);
-  pinMode(buttonPin, INPUT);
+//  pinMode(buttonPin, INPUT);
 }
 
 void loop() 
@@ -34,7 +34,7 @@ void loop()
   //Codice per la Scrittura
   if (Serial.available() > 0) {
     String testo = Serial.readStringUntil('\n');
-    Serial.println("Trasmissione in Corso...");
+    Serial.println("Traduzione in Corso...");
     testo.toUpperCase();
 
     for (int i = 0; i < testo.length(); i++) 
@@ -53,7 +53,7 @@ void loop()
       } 
       else if (c == ' ') delay(tempoTrasmissione * 2); // Pausa tra parole
     }
-    Serial.println("Trasmissione completata");
+    Serial.println("Traduzione completata");
   }
 /*
   //Fine Codice Scrittura. Inizio Codice Traduzione
@@ -146,7 +146,7 @@ void eseguiMorse(String sequenza) {
     delay(tempoTrasmissione);
   }
 }
-
+/*
 //Funzione di traduzione da stringa di punti linea a simbolo in formato ASCII
 char traduciMorse(String sequenza) 
 {
@@ -168,3 +168,4 @@ char traduciMorse(String sequenza)
   }
   return '?'; // Se non trovato
 }
+*/
