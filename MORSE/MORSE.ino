@@ -55,7 +55,7 @@ void loop()
     }
     Serial.println("Trasmissione completata");
   }
-
+/*
   //Fine Codice Scrittura. Inizio Codice Traduzione
 
   int statoBottone = digitalRead(buttonPin);
@@ -128,6 +128,7 @@ void loop()
       }
     }
   }
+*/
 }
 
 //Funzione di traduzione da stringa di simbolo a suono e luce
