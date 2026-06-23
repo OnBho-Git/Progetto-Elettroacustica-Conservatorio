@@ -106,7 +106,7 @@ Le due funzioni esterne sono quelle richiamate rispettivamente per inviare il se
 
 ## IA??
 
-Sì, è stata utilizzata l'IA nella fase 'grafica'. Il codice che crea i punti e le linee durante la fase di scrittura e poi la relativa cancellazione è stato fatto con l'aiuto di Gemini Pro 2.5
+// Sì, è stata utilizzata l'IA nella fase 'grafica'. Il codice che crea i punti e le linee durante la fase di scrittura e poi la relativa cancellazione è stato fatto con l'aiuto di Gemini Pro 2.5
 
 ---
 # Fine
