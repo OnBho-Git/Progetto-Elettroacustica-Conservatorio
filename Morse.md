@@ -90,7 +90,7 @@ Inizializzazione del Seriale e definizione dei PIN in valore di scrittura o lett
 ---
 ## Il codice: void loop
 
-La parte di loop è divisa in due sezioni: quella che legge dal terminale e invia all'esterno il testo tradotto in codice morse e quella che trasforma il codice morse inviato dal bottone in testo stampato a schermo
+La parte di loop è divisa in due sezioni: quella che legge dal terminale e invia all'esterno il testo tradotto in codice morse // e quella che trasforma il codice morse inviato dal bottone in testo stampato a schermo
 
 ![ Arduino](src/Arduino.png)
 
